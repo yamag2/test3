@@ -1,22 +1,20 @@
 <template>
-<form name="contact" method="POST" data-netlify="true" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<form name="contact" method="POST"
+  data-netlify-honeypot="bot-field"
+  data-netlify-recaptcha="true"
+  data-netlify="true">
+  <fieldset id="sign_up">
+    <legend>Ç®ñ‚Ç¢çáÇÌÇπ</legend>
+    <div>
+      <label for="fullname">Ç®ñºëO</label>
+      <input type="text" name="fullname" id="fullname"
+       placeholder="Ç®ñºëOÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢">
+    </div>
+    <input type="hidden" name="bot-field" />
+  </fieldset>
+  <div data-netlify-recaptcha="true"></div>
+  <div >
+    <input type="submit" value="ëóêM">
+  </div>
 </form>
 </template>
