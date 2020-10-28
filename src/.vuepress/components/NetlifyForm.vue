@@ -4,17 +4,17 @@
   data-netlify-recaptcha="true"
   data-netlify="true">
   <fieldset id="sign_up">
-    <legend>Ç®ñ‚Ç¢çáÇÌÇπ</legend>
+    <legend>CONTACT US!</legend>
     <div>
-      <label for="fullname">Ç®ñºëO</label>
+      <label for="fullname">Ur Name</label>
       <input type="text" name="fullname" id="fullname"
-       placeholder="Ç®ñºëOÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢">
+       placeholder="Input Ur Name">
     </div>
     <input type="hidden" name="bot-field" />
   </fieldset>
   <div data-netlify-recaptcha="true"></div>
   <div >
-    <input type="submit" value="ëóêM">
+    <input type="submit" value="Send">
   </div>
 </form>
 </template>
