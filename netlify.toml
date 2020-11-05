@@ -1,4 +1,4 @@
 [build]
   command = "yarn build"
-  publish = "src/.vuepress/dist/client"
-  functions = "src/.vuepress/dist/server"
+  publish = "dist"
+  functions = "my-functions"
