@@ -4,7 +4,7 @@
     "vuepress-theme-meteorlxy": "^1.9.0"
   },
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src --dest dist"
+    "dev": "vuepress dev src && netlify-lambda serve resources/api",
+    "build": "vuepress build src --dest dist && netlify-lambda build resources/api"
   }
 }
