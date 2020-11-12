@@ -7,6 +7,6 @@
   },
   "scripts": {
     "dev": "vuepress dev src && netlify-lambda build functions/",
-    "build": "vuepress build src --dest dist && netlify-lambda build functions/"
+    "build": "vuepress build src --dest src/.vuepress/dist && netlify-lambda build functions/"
   }
 }
